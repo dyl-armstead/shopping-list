@@ -10,7 +10,7 @@ $(function() {
   
     $('ul').on('click','button.shopping-item-toggle',function(event) {
       event.preventDefault();
-      $(event.currentTarget).closest('li').find('span').toggleClass('shopping-item__checked');
+      $(event.currentTarget).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
     });
   
     $('ul').on('click','button.shopping-item-delete',function(event) {
